@@ -44,3 +44,17 @@ sr.reveal(".project__img", { interval: 200 });
 sr.reveal(".description", { interval: 200 });
 sr.reveal(".album__img", { interval: 200 });
 sr.reveal(".contact__input", { interval: 200 });
+
+
+
+// Popup Picture
+   function openPopup(img) {
+     var popupImg = document.getElementById("popupImg");
+     popupImg.src = img.src; // Set the source of the pop-up image
+     document.getElementById("popup").style.display = "block";
+   }
+
+   // Function to close the pop-up
+   function closePopup() {
+     document.getElementById("popup").style.display = "none";
+   }

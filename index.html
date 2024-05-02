@@ -9,11 +9,15 @@
     <title>Welcome to My Profile</title>
   </head>
   <body>
+              <!-- Pop-up container -->
+<div id="popup" class="popup-container" onclick="closePopup()">
+    <img id="popupImg" class="popup-image" src="" alt="Pop-up Image">
+</div>
     <!-- Header Start-->
     <header class="l-header">
       <nav class="nav bd-grid">
         <div>
-          <a href="#home" class="nav__logo">Muhammad Sufyan</a>
+          <a href="#home" class="nav__logo">I Gede Putra Wibawa</a>
         </div>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
@@ -21,6 +25,7 @@
             <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
             <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
             <li class="nav__item"><a href="#project" class="nav__link">Project</a></li>
+            <li class="nav__item"><a href="#english" class="nav__link">English</a></li>
             <li class="nav__item"><a href="#album" class="nav__link">Album</a></li>
             <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
           </ul>
@@ -39,18 +44,18 @@
         <div class="home__data">
           <h1 class="home__title">
             Hi, I'am <br />
-            <span class="home__title-color">Muhammad Sufyan</span> <br />
+            <span class="home__title-color">Putra Wibawa</span> <br />
             Software Developer
           </h1>
           <a href="#contact" class="button">Contact Me</a>
         </div>
         <div class="home__social">
-          <a href="#" class="home__social-icon"><i class="bx bxl-linkedin"></i></a>
-          <a href="#" class="home__social-icon"><i class="bx bxl-gmail"></i></a>
-          <a href="#" class="home__social-icon"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/i-gede-putra-wibawa-6427511b2/" class="home__social-icon"><i class="bx bxl-linkedin"></i></a>
+          <a href="mailto:putrawibawa7@gmail.com" class="home__social-icon"><i class="bx bxl-gmail"></i></a>
+          <a href="https://github.com/putrawibawa9" class="home__social-icon"><i class="bx bxl-github"></i></a>
         </div>
         <div class="home__img">
-          <img src="Assets/Image/profile.jpg" alt="" />
+          <img style="border-radius: 50%;" src="Assets/Image/Desain tanpa judul_20240501_100132_0000.png" alt="" />
         </div>
       </section>
       <!-- Home End -->
@@ -60,15 +65,16 @@
         <h2 class="section-title">About Me</h2>
         <div class="about__container bd-grid">
           <div class="about__img">
-            <img src="Assets/Image/about.jpeg" alt="" />
+            <img src="Assets/Image/fotoProfesional.webp" alt="" />
           </div>
           <div class="about__content">
-            <h2 class="about__subtitle">I'am <span class="about__title-color">Muhammad Sufyan</span></h2>
-            <h3 class="about__subtitle">An <span class="about__title-color">Front End Developer</span> and <span class="about__title-color">Software Tester</span> at Begginer level</h3>
+            <h2 class="about__subtitle">I'am <span class="about__title-color">Putra Wibawa</span></h2>
+            <h3 class="about__subtitle">A <span class="about__title-color">Back End Developer</span> and a <span class="about__title-color">Fluent English Speaker</span></h3>
+            <!-- <h3 class="about__subtitle">A <span class="about__title-color">Piece of shit</span> and a <span class="about__title-color">Professional money waster</span></h3> -->
             <p class="about__text">
-              Hello everyone! I am Muhammad Sufyan, an application and website developer. I am a beginner and I hope that with this I can continue to develop to be able to produce digital applications that can help humans in the future
+              Hello everyone! I am Putra Wibawa, an application and website developer. I hope that with this I can continue to develop to be able to produce digital applications that can help humans in the future
             </p>
-            <p class="about__text">I want to be a reliable programmer with creative ideas and logical thinking so that I can create digital works that can be enjoyed and benefited by many people.</p>
+            <p class="about__text">I also constribute much for an English Course and interact with a lot of foreign people across the globe. In my role, I facilitate discussions, provide feedback on assignments, and offer insights into the nuances of the English language. Through this global exchange, I've cultivated friendships and gained invaluable perspectives on language learning and cultural exchange. </p>
           </div>
         </div>
       </section>
@@ -97,7 +103,7 @@
                 <span class="skills__name">CSS</span>
               </div>
               <div>
-                <span class="skills__percentage">80%</span>
+                <span class="skills__percentage">40%</span>
               </div>
               <div class="skills__bar skills__css"></div>
             </div>
@@ -113,18 +119,28 @@
             </div>
             <div class="skills__data">
               <div class="skills__names">
-                <i class="bx bxl-angular skills__icon"></i>
-                <span class="skills__name">Angular</span>
+                <i class="bx bxl-php skills__icon"></i>
+                <span class="skills__name">PHP</span>
               </div>
               <div>
-                <span class="skills__percentage">55%</span>
+                <span class="skills__percentage">80%</span>
               </div>
-              <div class="skills__bar skills__angular"></div>
+              <div class="skills__bar skills__php"></div>
             </div>
             <div class="skills__data">
               <div class="skills__names">
                 <i class="bx bxl-bootstrap skills__icon"></i>
                 <span class="skills__name">Bootstrap</span>
+              </div>
+              <div>
+                <span class="skills__percentage">75%</span>
+              </div>
+              <div class="skills__bar skills__bootstrap"></div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bx-code skills__icon"></i>
+                <span class="skills__name">Laravel</span>
               </div>
               <div>
                 <span class="skills__percentage">75%</span>
@@ -143,49 +159,94 @@
       <section class="project section" id="project">
         <h2 class="section-title">Project</h2>
         <p class="section__subtitle">There are some of project that i have finished by personal or by team</p>
+        <p class="section__subtitle">Please Login with 'admin' for username and password</p>
         <div class="project__container bd-grid">
           <div class="project__img">
             <a href="https://www.instagram.com/">
-              <img src="Assets/Image/proyek 1.jpg" alt="" />
+              <img src="Assets/Image/tokoKelontong .webp" alt="" />
+              <h1 class="textboxx">Toko Kelontong</h1>
+              <p class="textbox">Streamline your kelontong experience online. Simplify shopping, manage inventory, and connect with customers effortlessly. Embrace convenience with our tailored web solution</p>
             </a>
           </div>
           <div class="project__img">
             <a href="https://www.instagram.com/">
-              <img src="Assets/Image/proyek 1.jpg" alt="" />
+              <img src="Assets/Image/websalsa.webp" alt="" />
+              <h1 class="textboxx">Happy Birthday</h1>
+              <p class="textbox">Unlock the perfect birthday surprise! Discover unique gifts, delight loved ones, and create unforgettable moments with our curated selection. Make every birthday extraordinary</p>
             </a>
           </div>
           <div class="project__img">
             <a href="https://www.instagram.com/">
-              <img src="Assets/Image/proyek 1.jpg" alt="" />
+              <img src="Assets/Image/unixhuman.webp" alt="" />
+              <h1 class="textboxx">Rahindra Cosplay</h1>
+              <p class="textbox">Transform into your favorite anime character effortlessly! Explore our vast collection of costumes, accessories, and cosplay essentials. Embrace your inner hero or heroine with style!</p>
             </a>
           </div>
           <div class="project__img">
             <a href="https://www.instagram.com/">
-              <img src="Assets/Image/proyek 1.jpg" alt="" />
+              <img src="Assets/Image/tokoparfum.webp" alt="" />
+              <h1 class="textboxx">Toko Parfum</h1>
+              <p class="textbox">Indulge your senses in luxury scents! Explore our curated collection of exquisite perfumes, each bottle a unique journey of fragrance. Discover your signature scent today.</p>
             </a>
           </div>
           <div class="project__img">
             <a href="https://www.instagram.com/">
-              <img src="Assets/Image/proyek 1.jpg" alt="" />
+              <img src="Assets/Image/tubang.webp" alt="" />
+              <h1 class="textboxx">Tukang Bangunan</h1>
+              <p class="textbox">Elevate your construction project with our exclusive promotions! From materials to manpower, find unbeatable deals and expert advice to bring your vision to life. Build better, save smarter.</p>
             </a>
           </div>
           <div class="project__img">
-            <img src="Assets/Image/proyek 2.jpg" alt="" />
+            <a href="https://www.instagram.com/">
+              <img src="Assets/Image/pbmovies.webp" alt="" />
+              <h1 class="textboxx">PB Movies</h1>
+              <p class="textbox">Explore the cinematic universe effortlessly! Discover your next movie adventure with our comprehensive search tool. From classics to new releases, find your perfect film, anytime, anywhere.</p>
+            </a>
           </div>
           <div class="project__img">
-            <img src="Assets/Image/proyek 3.jpg" alt="" />
+            <a href="https://www.instagram.com/">
+              <img src="Assets/Image/cemilan.webp" alt="" />
+              <h1 class="textboxx">Cemilan Sehat</h1>
+              <p class="textbox">Nourish your body, nurture your well-being! Explore our wholesome selection of healthy foods, recipes, and nutritional tips. Fuel your journey to vitality with every delicious bite.</p>
+            </a>
           </div>
           <div class="project__img">
-            <img src="Assets/Image/proyek 4.jpg" alt="" />
+            <a href="https://www.instagram.com/">
+              <img src="Assets/Image/gaywedding.webp" alt="" />
+              <h1 class="textboxx">Wedding Invitation</h1>
+              <p class="textbox">Capture the magic of your special day! Our bespoke wedding invitations blend elegance and charm, setting the stage for a love-filled celebration. Create unforgettable memories, one invitation at a time.</p>
+            </a>
           </div>
           <div class="project__img">
-            <img src="Assets/Image/project 5.png" alt="" />
-          </div>
-          <div class="project__img">
-            <img src="Assets/Image/proyek 6.jpg" alt="" />
+            <a href="https://www.instagram.com/">
+              <img src="Assets/Image/coffeeshop.webp" alt="" />
+              <h1 class="textboxx">Coffee Shop</h1>
+              <p class="textbox">Experience pure bliss in every sip at our inviting coffee sanctuary. From expertly crafted brews to cozy ambiance, create unforgettable moments with us.</p>
+            </a>
           </div>
         </div>
+            <a href="" class="section__subtitle">There are some of project that i have finished by personal or by team</a>
       </section>
+      <section class="project section" id="project">
+        <h2 class="section-title">Certification</h2>
+        <p class="section__subtitle">There are some of project that i have finished by personal or by team</p>
+        <div class="project__container bd-grid">
+          <div class="project__img">
+              <img id="myImage" src="Assets/Image/survivalenglish.jpg" onclick="openPopup(this)" />
+              <h1 class="textboxx">Toko Kelontong</h1>
+              <p class="textbox">Streamline your kelontong experience online. Simplify shopping, manage inventory, and connect with customers effortlessly. Embrace convenience with our tailored web solution</p>
+          </div>
+          <div class="project__img">
+              <img id="myImage" src="Assets/Image/certificate_html_page-0001.jpg" onclick="openPopup(this)" />
+              <h1 class="textboxx">Toko Kelontong</h1>
+              <p class="textbox">Streamline your kelontong experience online. Simplify shopping, manage inventory, and connect with customers effortlessly. Embrace convenience with our tailored web solution</p>
+          </div>
+
+
+        </div>
+  
+      </section>
+    
       <!-- Project End -->
 
       <!-- Project Description Start -->
@@ -256,11 +317,13 @@
       <section class="contact section" id="contact">
         <h2 class="section-title">Contact</h2>
         <div class="contact__container bd-grid">
-          <form action="" class="contact__form">
-            <input type="text" class="contact__input" placeholder="Name" />
-            <input type="email" class="contact__input" placeholder="Email" />
-            <textarea name="" id="" cols="0" rows="10" class="contact__input" placeholder="Message"></textarea>
-            <input type="button" value="Submit" class="contact__button button" />
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+
+              <input type="hidden" name="access_key" value="f31eaf00-0b2f-457e-90bd-8e6321be7992">
+            <input name="name" type="text" class="contact__input" placeholder="Name" />
+            <input type="email" name="email" class="contact__input" placeholder="Sender Email" />
+            <textarea name="message" id="" cols="0" rows="10" class="contact__input" placeholder="Message"></textarea>
+            <input type="submit" value="Submit" class="contact__button button" />
           </form>
         </div>
       </section>
@@ -270,12 +333,11 @@
 
     <!-- Footer Start -->
     <footer class="footer">
-      <p class="footer__title">Muhammad Sufyan</p>
+      <p class="footer__title">I Gede Putra Wibawa</p>
       <div class="footer__social">
-        <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="footer__icon"><i class="bx bxl-tiktok"></i></a>
-        <a href="#" class="footer__icon"><i class="bx bxl-whatsapp"></i></a>
+        <a href="https://www.facebook.com/putra.wibawa.359" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/putrawibawa9/" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+        <a href="https://wa.me/+62895623318043" class="footer__icon"><i class="bx bxl-whatsapp"></i></a>
       </div>
       <p>&#169; 2021 Copyright all right reserved</p>
     </footer>
